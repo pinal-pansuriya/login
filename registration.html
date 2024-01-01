@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <p id="exist-msg">Enter your Details</p>
+        <!-- <form action="#" onsubmit="getRegisterData()" class="register-form"> -->
+            <form>
+            <label for="reg-fullName">Full Name:</label>
+            <input type="text" name="fullName" id="reg-fullName"><br>
+            <label for="reg-email">Email:</label>
+            <input type="email" name="email" id="reg-email"><br>
+            <label for="reg-password">Password:</label>
+            <input type="password" name="password" id="reg-password"><br>
+            <button type="submit" class="register-button" id="register" onclick="func1()">Register</button>
+            <p>Already User? <a href="./login.html">Log In</a> here.</p>
+        </form>
+    </div>
+    <script src="./register.js "></script>
+</body>
+
+</html>
