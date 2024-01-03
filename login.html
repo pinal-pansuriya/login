@@ -1,49 +1,31 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-</head>
-<body>
-    
-    <center>
-        <h1>login</h1>
-    <form onclick="func()">
-        email&nbsp&nbsp<input type="text"  name=email id="login-email"><br><br>
-        password&nbsp&nbsp<input type="password"  name=password id="login-password"><br><br>
-        <div id="btn"> -->
-        <!-- <button id ="btn" >login</button><br><br>
-        </div>
-        <a href="registration.html">Registration Hear</a>
-    </form>
-</center>
-    <script src="./login.js"></script>
-</body>
-</html> --> 
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <center>
-    <form>
-        <h1>login</h1>
-        <div class="login-form">
-            <!-- <h4>email</h4> -->
-            <div class = "email-input">
-               email&nbsp&nbsp<input type = "email" placeholder="Enter email" id="email"></input><br><br>
-            <!-- <h4>password</h4> -->
-           password&nbsp&nbsp<input class="password" aria-placeholder="enter password" id="password"></input><br><br>
-            <button id="login" onclick="func()">login</button><br><br>
-            <a href="./registration.html" title="register">Register Hear</a>
-        
-    </form>
+        <form id="form">
+            <h1>login</h1><br><br>
+            <div class="login-form">
+                <!-- <h4>email</h4> -->
+                <div class="email-input">
+                    email&nbsp&nbsp<input type="email" name="email" placeholder="Enter email"
+                        id="email"></input><br><br>
+                    <!-- <h4>password</h4> -->
+                    password&nbsp&nbsp<input class="password" name="password" placeholder="******"
+                        id="password"></input><br><br>
+                    <button id="login" onclick="savedata()">login</button><br><br>
+                    <a href="./registration.html" title="register">Register Hear</a>
+
+        </form>
     </center>
-    <script src="./login.js"></script>
+    <script src="./login2.js"></script>
 </body>
+
 </html>

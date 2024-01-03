@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#form{
+    background-color:pink;
+    font-style: initial;
+    width: 60%;
+    padding: 90px;
+
+}
+
+#dashboard{
+    background-color: pink;
+}
