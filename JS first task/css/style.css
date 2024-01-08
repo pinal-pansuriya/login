@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    background-color: pink;
+}
+
+#loginform{
+    padding: 30px 400px 500px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(53, 11, 11);
+    font-weight: 600;
+    background-color: pink;
+    
+}
+
+#loginButton{
+    background-color: rgb(53, 11, 11);
+    color: pink;
+}
+
+#registerform{
+    padding: 30px 400px 500px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(53, 11, 11);
+    font-weight: 600;
+    background-color: pink;
+    
+}
+
+#registerButton{
+    background-color: rgb(53, 11, 11);
+    color: pink; 
+}
+
+#logout{
+    background-color: rgb(53, 11, 11);
+    color: pink; 
+}
+
+#nameHeading{
+    background-color: rgb(53, 11, 11);
+    color: pink; 
+}
+
+#gify{
+    padding: 30px;
+}
+

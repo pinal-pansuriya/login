@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body onload="dashBoard()">
+    
+    <h1 id="nameHeading" align="center" ></h1>
+    <div id="button">
+      <button onclick="logout()" id="logout">logout</button>
+    </div>
+    <div id="todoApp" align="right">
+      <h2>Todo App</h2>
+      <input type="text" placeholder="Enter your todo" id="todoValue">
+      <button id="addTodo" onclick="addTodo()">Add todo</button>
+      <table id="todos"></table>
+    </div>
+    <div>
+      <image src="" id="gify"></image>
+    </div>
+    <div class="container" align="left">
+      <p><b>current Date</b></p>
+      <h3 id="current-date"></h3>
+      <p><b>current Time</b></p>
+      <h3 id="current-time"></h3>
+    </div>
+    
+  </body>
+  <script src="./js/dashboard.js"></script>
+</html>
