@@ -14,24 +14,24 @@ function dashBoard() {
 const gif = document.getElementById("gify")
 const gifss = ["../image/giphy.gif", "../image/giphy1.gif.gif"]
 setInterval(function () {
-    const random = Math.floor(Math.random() * gifss.length)
-    gif.src = gifss[random]
+  const random = Math.floor(Math.random() * gifss.length)
+  gif.src = gifss[random]
 }, 200)
 
-  const datetoday = document.getElementById("current-date")
-  const today = new Date()
-  const day = `${today.getDate()<10 ? "0" : ""}${today.getDate()}`
-  const month = `${(today.getMonth() + 1) < 10 ? "0" : ""}${today.getMonth() +1}`
-  const year = today.getFullYear()
-  datetoday.textContent = `${day}/${month}/${year}`
+const datetoday = document.getElementById("current-date")
+const today = new Date()
+const day = `${today.getDate() < 10 ? "0" : ""}${today.getDate()}`
+const month = `${(today.getMonth() + 1) < 10 ? "0" : ""}${today.getMonth() + 1}`
+const year = today.getFullYear()
+datetoday.textContent = `${day}/${month}/${year}`
 
-const time=document.getElementById("current-time")
+const time = document.getElementById("current-time")
 setInterval(() => {
-    const d= new Date()
-time.innerHTML = d.toLocaleTimeString()
-},1000)
+  const d = new Date()
+  time.innerHTML = d.toLocaleTimeString()
+})
 
-function logout(){
+function logout() {
   window.location.replace("login.html")
 }
 
@@ -52,9 +52,9 @@ function addTodo() {
   }
   todosData.push(newTodo)
   localStorage.setItem('todosData', JSON.stringify(todosData))
- document.getElementById('todoValue').value =""
+  document.getElementById('todoValue').value = ""
   renderTodos(currentUser)
-  
+
 }
 
 function renderTodos(currentUser) {
@@ -73,7 +73,7 @@ function renderTodos(currentUser) {
      </tr>`
   });
   table.innerHTML = html
-  
+
 }
 
 function doCheckUncheck(index) {
@@ -152,7 +152,7 @@ function editTodo(index) {
 // function dashBoard() {
 //   const nameHeading = document.getElementById('nameHeading')
 //   const currentUser = JSON.parse(localStorage.getItem('loggedInUser'))
-//   nameHeading.innerText = `Hello ${currentUser.name} 👋` // 'Hello ' + currentUser.name 
+//   nameHeading.innerText = `Hello ${currentUser.name} 👋` // 'Hello ' + currentUser.name
 
 //   renderTodos(currentUser)
 // }
